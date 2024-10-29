@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Management System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1>University Schedule Management System</h1>
+
+    <h2>Add Professor</h2>
+    <form id="addProfessorForm">
+        <input id="professorName" type="text" placeholder="Professor Name" required />
+        <input id="professorDept" type="text" placeholder="Department" required />
+        <button type="submit">Add Professor</button>
+    </form>
+
+    <h2>Add Lesson</h2>
+    <form id="addLessonForm">
+        <input type="text" id="lessonName" placeholder="Lesson Name" required>
+        
+        <select id="professorSelect"></select>
+        
+        <select id="courseSelect"></select>
+        <select id="classroomSelect">
+            <option value="101">101</option>
+            <option value="102">102</option>
+            <option value="103">103</option>
+            <option value="104">104</option>
+        </select>
+        <select id="courseTypeSelect"></select>
+        <select id="dayOfWeekSelect"></select>
+        <select id="timeSlotSelect"></select>
+
+        <button type="submit">Add Lesson</button>
+    </form>
+
+    <div id="scheduleResults"></div>
+
+    <script src="assets/ts/main.js"></script>
+</body>
+</html>
